@@ -1,11 +1,11 @@
 # Advanced topics in wireless communications
 
 
-SLOCK Dirk
-MALAK Derya
-STAVROU Fotios
-PADAKANDLA Arun
-ELIA Petros
+- SLOCK Dirk
+- MALAK Derya
+- STAVROU Fotios
+- PADAKANDLA Arun
+- ELIA Petros
 
 ## Abstract
 
