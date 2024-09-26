@@ -57,4 +57,6 @@ Understand key ideas behind the fantastic surge in performance in new mobile net
  
 `Nb hours:` 42.00 including 3hr exercise session, 3hrs lab session.
 
-`Grading Policy:` Lab reports (25%), Final Exam (75%.) 2 hour written exam - all documents authorized.
+`Grading Policy:` 
+- Lab reports (25%)
+- Final Exam (75%.) 2 hour written exam - all documents authorized.
