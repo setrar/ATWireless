@@ -58,5 +58,10 @@ Understand key ideas behind the fantastic surge in performance in new mobile net
 `Nb hours:` 42.00 including 3hr exercise session, 3hrs lab session.
 
 `Grading Policy:` 
-- Lab reports (25%)
-- Final Exam (75%.) 2 hour written exam - all documents authorized.
+- Final Exam (35%.) 2 hours  (all ATW documents allowed)
+- Midterm Exam (20%) 1 hour approximately (all ATW documents allowed)
+- Extra (research presentation, etc) (25%),
+- Attendance (20%)
+
+For attendance, students may miss up to 2 classes without penalty. 
+Beyond that, each additional missed class will result in a 10% reduction of the attendance grade.
