@@ -705,7 +705,7 @@ diversity is the Alamouti code. The Alamouti scheme is specifically
 designed for a \(2 \times 1\) setup and achieves full diversity by using
 two transmit antennas and one receive antenna.
 
-\subsubsection{Space-Time Code: Alamouti
+\paragraph{Space-Time Code: Alamouti
 Code}\label{space-time-code-alamouti-code}
 
 \begin{itemize}
@@ -716,7 +716,7 @@ Code}\label{space-time-code-alamouti-code}
   \textbf{Code Rate}: 1 bpcu (bit per channel use)
 \end{itemize}
 
-\subsubsection{Description}\label{description}
+\paragraph{Description}\label{description}
 
 The Alamouti scheme transmits two symbols \(s_1\) and \(s_2\) over two
 time slots from two transmit antennas. The transmission matrix for the
@@ -724,7 +724,7 @@ Alamouti code is given by:
 
 \(\mathbf{S} = \begin{bmatrix} s_1 & s_2 \\ -s_2^* & s_1^* \end{bmatrix}\)
 
-\subsubsection{Rate Calculation}\label{rate-calculation}
+\paragraph{Rate Calculation}\label{rate-calculation}
 
 Since 16-QAM is used, each symbol \(s_1\) and \(s_2\) carries 4 bits
 (since 16-QAM has \(2^4 = 16\) symbols).
@@ -835,11 +835,48 @@ always halve the individual rate to each user? Justify your answer.
 
     \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-No, you do not always have to halve the individual rate when doubling
-the number of users in a MU-MIMO channel. Efficient spatial
+No, you do not always have to halve the individual rate to each user
+when you double the number of users in a MU-MIMO (Multi-User Multiple
+Input Multiple Output) channel. The relationship between the number of
+users and their individual rates depends on several factors, including
+the total available bandwidth, the power allocation, the channel
+conditions, and the spatial multiplexing capabilities of the system.
+
+\paragraph{Justification:}\label{justification}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Spatial Multiplexing Gains}: MU-MIMO systems can exploit
+  spatial multiplexing to serve multiple users simultaneously without
+  necessarily reducing the rate per user. With efficient spatial
+  processing (such as beamforming) and adequate channel state
+  information at the transmitter (CSIT), the system can separate the
+  signals intended for different users.
+\item
+  \textbf{Power Allocation}: The total transmit power can be dynamically
+  allocated among the users. By optimizing the power allocation, it is
+  possible to maintain or even improve the individual rates of users
+  despite an increase in the number of users.
+\item
+  \textbf{Channel Conditions}: The individual rates are also influenced
+  by the quality of the channels between the transmitter and the users.
+  If the channels are favorable (e.g., high signal-to-noise ratio, low
+  interference), the system can support more users without significantly
+  degrading their individual rates.
+\item
+  \textbf{Advanced Techniques}: Techniques such as user scheduling,
+  adaptive modulation and coding, and interference management can help
+  maintain individual user rates even as the number of users increases.
+\end{enumerate}
+
+\paragraph{Conclusion:}\label{conclusion}
+
+Doubling the number of users in a MU-MIMO channel does not necessarily
+mean halving the individual rate for each user. Efficient use of spatial
 multiplexing, power allocation, favorable channel conditions, and
-advanced techniques can maintain or even improve individual rates
-despite an increase in the number of users.
+advanced signal processing techniques can help mitigate the impact on
+individual rates.
 
     \(\color{orange}9\Bigl)\) \textbf{\emph{(4 points)}}. Consider
 communication over the\(2 \times 1\) quasi-static fading MISO channel,
@@ -896,7 +933,7 @@ regulate SNR.
 
     \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\subsubsection{ML Decoding Rule}\label{ml-decoding-rule}
+\paragraph{ML Decoding Rule}\label{ml-decoding-rule}
 
 The Maximum Likelihood (ML) decoding rule for the given channel model is
 to find the transmitted symbols \(x_1\) and \(x_2\) that minimize the
@@ -910,8 +947,8 @@ where \(\underline{y} = (y_1 \quad y_2)\),
 \(\underline{h} = (h_1 \quad h_2)\),
 \(\mathcal{X}_{tr} = \begin{pmatrix} x_1 & 0 \\ 0 & x_2 \end{pmatrix}\).
 
-\subsubsection{\texorpdfstring{Cardinality of Code \(\mathcal{X}_{tr}\)
-for Rate \(R = 4\)
+\paragraph{\texorpdfstring{Cardinality of Code \(\mathcal{X}_{tr}\) for
+Rate \(R = 4\)
 bpcu}{Cardinality of Code \textbackslash mathcal\{X\}\_\{tr\} for Rate R = 4 bpcu}}\label{cardinality-of-code-mathcalx_tr-for-rate-r-4-bpcu}
 
 The rate \(R\) in bits per channel use (bpcu) determines the number of
@@ -919,7 +956,7 @@ possible codewords. If \(R = 4\) bpcu, the number of codewords is
 \(2^R = 2^4 = 16\). Therefore, the cardinality of the code
 \(\mathcal{X}_{tr}\) is 16.
 
-\subsubsection{\texorpdfstring{Normalizing Factor \(\theta\) for Rate
+\paragraph{\texorpdfstring{Normalizing Factor \(\theta\) for Rate
 \(R = 8\) bpcu at SNR = 10
 dB}{Normalizing Factor \textbackslash theta for Rate R = 8 bpcu at SNR = 10 dB}}\label{normalizing-factor-theta-for-rate-r-8-bpcu-at-snr-10-db}
 
@@ -945,7 +982,7 @@ Thus,
 
 \(\theta = \sqrt{\frac{10}{85}} \approx 0.34\)
 
-\subsubsection{Rate of Code and Slope of Probability of Error for
+\paragraph{Rate of Code and Slope of Probability of Error for
 16-PAM}\label{rate-of-code-and-slope-of-probability-of-error-for-16-pam}
 
 \begin{itemize}
@@ -973,8 +1010,8 @@ For a 2x1 MISO system using independent symbols, the diversity order is
 
 \(\text{Slope} = -2\)
 
-\subsubsection{\texorpdfstring{Rate and Slope of Probability of Error
-for Orthogonal Matrix \(\mathbf{Q}\) with
+\paragraph{\texorpdfstring{Rate and Slope of Probability of Error for
+Orthogonal Matrix \(\mathbf{Q}\) with
 64-QAM}{Rate and Slope of Probability of Error for Orthogonal Matrix \textbackslash mathbf\{Q\} with 64-QAM}}\label{rate-and-slope-of-probability-of-error-for-orthogonal-matrix-mathbfq-with-64-qam}
 
 \begin{itemize}
@@ -999,9 +1036,9 @@ for Orthogonal Matrix \(\mathbf{Q}\) with
 \(\text{Slope} = -2\)
 
     \(\color{orange}10\Bigl)\) \textbf{\emph{(Extra Credit: 5 points)}}.
-Consider communication over a quasi-static\(2 \times 2\)MIMO channel,
-utilizing the space-time
-code\(\mathcal{X} = \{\mathbf{X}_1,\mathbf{X}_2,\mathbf{X}_3,\mathbf{X}_4\}\),
+Consider communication over a quasi-static \(2 \times 2\) MIMO channel,
+utilizing the space-time code
+\(\mathcal{X} = \{\mathbf{X}_1,\mathbf{X}_2,\mathbf{X}_3,\mathbf{X}_4\}\),
 where
 
 \[
@@ -1043,7 +1080,7 @@ where
 
     \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\subsubsection{Average SNR}\label{average-snr}
+\paragraph{Average SNR}\label{average-snr}
 
 The SNR (Signal-to-Noise Ratio) in a MIMO system is typically defined as
 the ratio of the average signal power to the average noise power. If we
@@ -1062,7 +1099,7 @@ noise power is 1 per receive antenna, so:
 
 \(\text{Average SNR} = \text{SNR} = \frac{1}{1} = 1 \text{ (normalized)}\)
 
-\subsubsection{Rate of the Code in bpcu}\label{rate-of-the-code-in-bpcu}
+\paragraph{Rate of the Code in bpcu}\label{rate-of-the-code-in-bpcu}
 
 The rate of a space-time code is determined by the number of independent
 symbols transmitted per channel use. Here, we have 4 code matrices
@@ -1073,8 +1110,7 @@ codewords, we can send \(\log_2(4) = 2\) bits per channel use (bpcu).
 
 \(\text{Rate} = 2 \text{ bpcu}\)
 
-\subsubsection{Diversity Gain of the
-Code}\label{diversity-gain-of-the-code}
+\paragraph{Diversity Gain of the Code}\label{diversity-gain-of-the-code}
 
 The diversity gain of a space-time code is given by the rank of the
 difference of any two distinct code matrices. For full diversity, the
@@ -1090,7 +1126,7 @@ The rank of this matrix is 2, indicating full diversity.
 
 \(\text{Diversity Gain} = 2\)
 
-\subsubsection{Approximate Probability of Error at SNR = 30
+\paragraph{Approximate Probability of Error at SNR = 30
 dB}\label{approximate-probability-of-error-at-snr-30-db}
 
 In the high SNR regime, the probability of error \(P_e\) for a MIMO
@@ -1104,7 +1140,7 @@ The approximate probability of error is:
 
 \(P_e \approx \left( \frac{1}{10^3} \right)^2 = 10^{-6}\)
 
-\subsubsection{Summary}\label{summary}
+\paragraph{Summary}\label{summary}
 
 \begin{itemize}
 \tightlist
@@ -1118,10 +1154,10 @@ The approximate probability of error is:
   \textbf{Approximate Probability of Error at SNR = 30 dB}: \(10^{-6}\)
 \end{itemize}
 
-    \(11\Bigl)\) \textbf{\emph{(1 point)}}. Consider the following
-distributed setup with N = 3 workers, as shown in Figure 1. There are
-\(K = 3\) datasets, \(W_1, W_2,\) and \(W_3\), each of size 100 MBytes
-and each cache has a storage capacity of 200 MBytes.
+    \(\color{orange}11\Bigl)\) \textbf{\emph{(1 point)}}. Consider the
+following distributed setup with N = 3 workers, as shown in Figure 1.
+There are \(K = 3\) datasets, \(W_1, W_2,\) and \(W_3\), each of size
+100 MBytes and each cache has a storage capacity of 200 MBytes.
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi})}
@@ -1150,55 +1186,280 @@ and each cache has a storage capacity of 200 MBytes.
 \caption{Descrption}
 \end{figure}
 ![Descrption](images/Fig-01.png)
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{ }{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
+    \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\end{Verbatim}
-\end{tcolorbox}
+\paragraph{\texorpdfstring{\textbf{a) Distributing the
+datasets}}{a) Distributing the datasets}}\label{a-distributing-the-datasets}
 
-    \(12\Bigl)\) \textbf{\emph{(1 point)}}. Name two applications that in
-your opinion popularized Reinforcement Learning in scientific
-communities working on Artificial Intelligence?
+To ensure the master can recover all datasets \(W_1, W_2, W_3\) from
+\textbf{any 2 workers}: 1. \textbf{Storage Capacity}: Each worker has a
+storage capacity of \(200 \, \text{MB}\), and the total size of all
+datasets is \(300 \, \text{MB}\). Therefore, each dataset must be
+partially stored at multiple workers to enable recovery.
 
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{ }{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \textbf{Data Distribution}:
 
-\end{Verbatim}
-\end{tcolorbox}
+  \begin{itemize}
+  \tightlist
+  \item
+    Split each dataset \(W_1, W_2, W_3\) into \textbf{two equal parts}:
+    \(W_{i,1}\) and \(W_{i,2}\) (e.g., \(W_1 = W_{1,1} + W_{1,2}\), each
+    part \(50 \, \text{MB}\)).
+  \item
+    Assign the parts such that \textbf{any two workers have all parts of
+    all datasets}. For instance:
 
-    \(13\Bigl)\) \textbf{\emph{(1 point)}}. AlphaZero is one of the most
-exciting real-world applications that works using Reinforcement
-Learning. Name the two algorithms that are used by AlphaZero based on
-which this software achieves superior performance compared to humans.
+    \begin{itemize}
+    \tightlist
+    \item
+      Worker 1: \(W_{1,1}, W_{2,1}, W_{3,1}\) (150 MB total).
+    \item
+      Worker 2: \(W_{1,2}, W_{2,1}, W_{3,2}\) (150 MB total).
+    \item
+      Worker 3: \(W_{1,1}, W_{2,2}, W_{3,2}\) (150 MB total).
+    \end{itemize}
+  \end{itemize}
 
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{ }{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
+  This ensures that the master can recover \(W_1, W_2, W_3\) from any
+  two workers since all parts of each dataset are distributed across at
+  least two workers.
+\end{enumerate}
 
-\end{Verbatim}
-\end{tcolorbox}
+\paragraph{\texorpdfstring{\textbf{b) Total rate \(R\) required (in
+bits/ms)}}{b) Total rate R required (in bits/ms)}}\label{b-total-rate-r-required-in-bitsms}
 
-    \(14\Bigl)\) \textbf{\emph{(1 point)}}. Name two classes based on which
-one can distinguish exact dynamic programming algorithms?
+\begin{itemize}
+\item
+  \textbf{Delay Constraint}: The master must recover all
+  \(W_1, W_2, W_3\) (300 MB total) within \(10 \, \text{ms}\).
+\item
+  \textbf{Total Rate \(R\)}:
+  \(R = \frac{\text{Total Size of Datasets (in bits)}}{\text{Delay Constraint (in ms)}}.\)
 
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{ }{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
+  \begin{itemize}
+  \tightlist
+  \item
+    Total size of datasets =
+    \(300 \, \text{MB} = 300 \times 8 \times 10^6 \, \text{bits} = 2.4 \times 10^9 \, \text{bits}\).
+  \item
+    Delay constraint = \(10 \, \text{ms} = 10^{-2} \, \text{s}\).
+  \end{itemize}
 
-\end{Verbatim}
-\end{tcolorbox}
+  Substituting:
+  \(R = \frac{2.4 \times 10^9}{10} = 2.4 \times 10^8 \, \text{bits/ms}.\)
 
-    \(15\Bigl)\) \textbf{\emph{(1 point)}}. What is the difference between
-deterministic and stochastic dynamic programming algorithms?
+  \textbf{Answer}: \(R = 240 \, \text{Mbps}\).
+\end{itemize}
 
-    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{ }{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
+\paragraph{\texorpdfstring{\textbf{c) Total rate if the master can cache
+one
+dataset}}{c) Total rate if the master can cache one dataset}}\label{c-total-rate-if-the-master-can-cache-one-dataset}
 
-\end{Verbatim}
-\end{tcolorbox}
+\begin{itemize}
+\item
+  If the master caches one dataset, say \(W_1\), then it only needs to
+  recover \(W_2\) and \(W_3\) from the workers.
+\item
+  Size of data to be transmitted:
+  \(\text{Total Size} = W_2 + W_3 = 200 \, \text{MB} = 200 \times 8 \times 10^6 \, \text{bits} = 1.6 \times 10^9 \, \text{bits}.\)
+\item
+  \textbf{Total Rate \(R\)}:
+  \(R = \frac{1.6 \times 10^9}{10} = 1.6 \times 10^8 \, \text{bits/ms}.\)
+
+  \textbf{Answer}: \(R = 160 \, \text{Mbps}\).
+\end{itemize}
+
+\paragraph{\texorpdfstring{\textbf{d) Role of memory in transmission
+rate}}{d) Role of memory in transmission rate}}\label{d-role-of-memory-in-transmission-rate}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Without Master Caching}: The master must recover all datasets
+  (\(W_1, W_2, W_3\)) from the workers, resulting in a higher
+  transmission rate (\(240 \, \text{Mbps}\)).
+\item
+  \textbf{With Master Caching}: The master pre-storing one dataset
+  reduces the amount of data it needs to recover, thereby lowering the
+  transmission rate (\(160 \, \text{Mbps}\)).
+\end{itemize}
+
+\textbf{Conclusion}: - Increasing the memory at the master node
+significantly reduces the transmission rate required from the workers. -
+Memory acts as a \textbf{trade-off between storage and communication
+cost}, with more memory reducing the load on the communication channel.
+
+    \(\color{orange}12\Bigl)\) \textbf{\emph{(1 point)}}. Name two
+applications that in your opinion popularized Reinforcement Learning in
+scientific communities working on Artificial Intelligence?
+
+    \paragraph{\texorpdfstring{\textbf{Applications That Popularized
+Reinforcement Learning
+(RL):}}{Applications That Popularized Reinforcement Learning (RL):}}\label{applications-that-popularized-reinforcement-learning-rl}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Game Playing (e.g., AlphaGo, AlphaZero)}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Description}: RL gained significant attention with the
+    development of DeepMind's \textbf{AlphaGo} and later
+    \textbf{AlphaZero}, which used RL to achieve superhuman performance
+    in complex games like Go, chess, and shogi.
+  \item
+    \textbf{Impact}: These breakthroughs demonstrated RL's capability to
+    handle high-dimensional decision-making problems, inspiring its use
+    in other domains.
+  \end{itemize}
+\item
+  \textbf{Autonomous Robotics}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Description}: RL has been widely adopted in training robots
+    to perform tasks such as walking, grasping, and manipulation. Robots
+    learn optimal policies through interaction with their environments.
+  \item
+    \textbf{Impact}: Showcased RL's potential in real-world, dynamic,
+    and uncertain environments, leading to advancements in robotics and
+    control systems.
+  \end{itemize}
+\end{enumerate}
+
+    \(\color{orange}13\Bigl)\) \textbf{\emph{(1 point)}}. AlphaZero is one
+of the most exciting real-world applications that works using
+Reinforcement Learning. Name the two algorithms that are used by
+AlphaZero based on which this software achieves superior performance
+compared to humans.
+
+    The two key algorithms used by \textbf{AlphaZero} that enable its
+superior performance are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Monte Carlo Tree Search (MCTS)}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Description}: MCTS is a search algorithm used to explore
+    possible moves in a game by simulating future outcomes and using the
+    results to guide the search process.
+  \item
+    \textbf{Role in AlphaZero}: MCTS evaluates potential actions
+    efficiently, focusing on the most promising moves, which helps
+    AlphaZero make better decisions.
+  \end{itemize}
+\item
+  \textbf{Deep Reinforcement Learning}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Description}: AlphaZero combines reinforcement learning with
+    deep neural networks to approximate the value function (estimating
+    the likelihood of winning) and the policy (deciding the best move).
+  \item
+    \textbf{Role in AlphaZero}: The neural network predicts move
+    probabilities and board evaluations, guiding MCTS and improving its
+    performance over time through self-play.
+  \end{itemize}
+\end{enumerate}
+
+These two algorithms work together synergistically, with MCTS leveraging
+the neural network's outputs and the network improving its predictions
+through reinforcement learning.
+
+    \(\color{orange}14\Bigl)\) \textbf{\emph{(1 point)}}. Name two classes
+based on which one can distinguish exact dynamic programming algorithms?
+
+    Two classes used to distinguish exact dynamic programming algorithms
+are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Value Iteration}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Iteratively updates the value function for each state until
+    convergence, focusing on finding the optimal value function.
+  \end{itemize}
+\item
+  \textbf{Policy Iteration}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Alternates between policy evaluation (calculating the value of a
+    given policy) and policy improvement (updating the policy based on
+    the value function) until an optimal policy is found.
+  \end{itemize}
+\end{enumerate}
+
+    \(\color{orange}15\Bigl)\) \textbf{\emph{(1 point)}}. What is the
+difference between deterministic and stochastic dynamic programming
+algorithms?
+
+    The key differences between \textbf{deterministic} and
+\textbf{stochastic dynamic programming algorithms} are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Nature of the Environment}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Deterministic}: Assumes the system evolves in a fully
+    predictable manner, where the next state is uniquely determined by
+    the current state and action.
+  \item
+    \textbf{Stochastic}: Accounts for uncertainty, where the next state
+    depends on probabilistic transitions.
+  \end{itemize}
+\item
+  \textbf{Transition Model}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Deterministic}: Uses fixed transition rules (e.g.,
+    \(s_{t+1} = f(s_t, a_t)\)).
+  \item
+    \textbf{Stochastic}: Uses a probability distribution over possible
+    transitions (e.g., \(P(s_{t+1} | s_t, a_t)\)).
+  \end{itemize}
+\item
+  \textbf{Computation Complexity}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Deterministic}: Simpler and computationally less intensive
+    due to the absence of randomness.
+  \item
+    \textbf{Stochastic}: More complex, as it requires handling
+    probabilities and expectations over all possible transitions.
+  \end{itemize}
+\end{enumerate}
 
     \(16\Bigl)\) \textbf{\emph{(5 points)}}. Quantum. The two components of
 the
