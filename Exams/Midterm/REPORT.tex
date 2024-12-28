@@ -1461,16 +1461,16 @@ algorithms?
   \end{itemize}
 \end{enumerate}
 
-    \(16\Bigl)\) \textbf{\emph{(5 points)}}. Quantum. The two components of
-the
-state\(|\theta⟩= \frac{\sqrt(3)}{2\sqrt(2)}|11⟩+ \frac{\sqrt(5)}{2\sqrt(2)}|00⟩\)are
-shared amidst Alice and Bob. In other words, Alice has the first
+    \(\color{orange}16\Bigl)\) \textbf{\emph{(5 points)}}. Quantum. The two
+components of the state
+\(|\theta⟩= \frac{\sqrt(3)}{2\sqrt(2)}|11⟩+ \frac{\sqrt(5)}{2\sqrt(2)}|00⟩\)
+are shared amidst Alice and Bob. In other words, Alice has the first
 component and Bob has the second. Alice performs a measurement with two
-outcomes\(\{{+1,−1}\}\). Outcome\(+1\)is associated with
-operator\(|+⟩⟨+|\)and Outcome\(−1\)is associated with\(|−⟩⟨−|\). Bob
-performs a measurement with two outcomes\(\{{+1,−1}\}\). Outcome\(+1\)is
-associated with operator\(|0⟩⟨0|\)and Outcome\(−1\)is associated
-with\(|1⟩⟨1|\).
+outcomes \(\{{+1,−1}\}\). Outcome \(+1\) is associated with operator
+\(|+⟩⟨+|\) and Outcome \(−1\) is associated with \(|−⟩⟨−|\). Bob
+performs a measurement with two outcomes \(\{{+1,−1}\}\). Outcome \(+1\)
+is associated with operator \(|0⟩⟨0|\) and Outcome \(−1\) is associated
+with \(|1⟩⟨1|\).
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi})}
@@ -1487,6 +1487,156 @@ with\(|1⟩⟨1|\).
 \item
   Identify the post measurement state when Alice observes \(+1\) and Bob
   observes \(−1\).
+\end{enumerate}
+
+    \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\paragraph{\texorpdfstring{\textbf{a) Is the joint state entangled or
+separable?}}{a) Is the joint state entangled or separable?}}\label{a-is-the-joint-state-entangled-or-separable}
+
+The state is:
+
+\(|\theta\rangle = \frac{\sqrt{3}}{2\sqrt{2}} |11\rangle + \frac{\sqrt{5}}{2\sqrt{2}} |00\rangle.\)
+
+\begin{itemize}
+\tightlist
+\item
+  A state is \textbf{entangled} if it cannot be written as a tensor
+  product of individual states,
+  \(|\theta\rangle \neq |\phi_A\rangle \otimes |\phi_B\rangle\).
+\item
+  Here, \(|\theta\rangle\) is a superposition of \(|11\rangle\) and
+  \(|00\rangle\), and it cannot be decomposed into separable parts for
+  Alice and Bob.
+\end{itemize}
+
+\textbf{Answer}: The state is \textbf{entangled}.
+
+\paragraph{\texorpdfstring{\textbf{b) Probability of Alice observing
+\(-1\) and Bob observing
+\(+1\):}}{b) Probability of Alice observing -1 and Bob observing +1:}}\label{b-probability-of-alice-observing--1-and-bob-observing-1}
+
+\subparagraph{1. Measurement Operators:}\label{measurement-operators}
+
+\begin{itemize}
+\tightlist
+\item
+  Alice's measurement outcomes are:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(+1\): \(|+\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)\),
+  \item
+    \(-1\): \(|-\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)\).
+  \end{itemize}
+\item
+  Bob's measurement outcomes are:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(+1\): \(|0\rangle\),
+  \item
+    \(-1\): \(|1\rangle\).
+  \end{itemize}
+\end{itemize}
+
+\subparagraph{\texorpdfstring{2. Compute \(|\theta\rangle\) in the
+measurement
+basis:}{2. Compute \textbar\textbackslash theta\textbackslash rangle in the measurement basis:}}\label{compute-thetarangle-in-the-measurement-basis}
+
+\(|\theta\rangle = \frac{\sqrt{3}}{2\sqrt{2}} |11\rangle + \frac{\sqrt{5}}{2\sqrt{2}} |00\rangle.\)
+
+Express \(|1\rangle\) and \(|0\rangle\) in terms of \(|+\rangle\) and
+\(|-\rangle\) for Alice:
+\(|0\rangle = \frac{|+\rangle + |-\rangle}{\sqrt{2}}, \quad |1\rangle = \frac{|+\rangle - |-\rangle}{\sqrt{2}}.\)
+
+Substituting for Alice's basis:
+\(|11\rangle = \frac{1}{\sqrt{2}}(|+\rangle - |-\rangle)|1\rangle, \quad |00\rangle = \frac{1}{\sqrt{2}}(|+\rangle + |-\rangle)|0\rangle.\)
+
+Expand:
+\(|\theta\rangle = \frac{\sqrt{3}}{2\sqrt{2}} \cdot \frac{1}{\sqrt{2}} (|+\rangle - |-\rangle)|1\rangle + \frac{\sqrt{5}}{2\sqrt{2}} \cdot \frac{1}{\sqrt{2}} (|+\rangle + |-\rangle)|0\rangle.\)
+\(|\theta\rangle = \frac{\sqrt{3}}{4} (|+\rangle - |-\rangle)|1\rangle + \frac{\sqrt{5}}{4} (|+\rangle + |-\rangle)|0\rangle.\)
+
+\subparagraph{\texorpdfstring{3. Amplitude for \(|-\rangle|0\rangle\)
+(Alice observes \(-1\), Bob observes
+\(+1\)):}{3. Amplitude for \textbar-\textbackslash rangle\textbar0\textbackslash rangle (Alice observes -1, Bob observes +1):}}\label{amplitude-for--rangle0rangle-alice-observes--1-bob-observes-1}
+
+The coefficient of \(|-\rangle|0\rangle\) is: \(\frac{\sqrt{5}}{4}.\)
+
+\subparagraph{4. Probability:}\label{probability}
+
+\(P(-1, +1) = \left|\frac{\sqrt{5}}{4}\right|^2 = \frac{5}{16}.\)
+
+\paragraph{\texorpdfstring{\textbf{c) Probability of Alice and Bob BOTH
+observing
+\(-1\):}}{c) Probability of Alice and Bob BOTH observing -1:}}\label{c-probability-of-alice-and-bob-both-observing--1}
+
+\subparagraph{\texorpdfstring{1. Amplitude for
+\(|-\rangle|1\rangle\):}{1. Amplitude for \textbar-\textbackslash rangle\textbar1\textbackslash rangle:}}\label{amplitude-for--rangle1rangle}
+
+The coefficient of \(|-\rangle|1\rangle\) is: \(-\frac{\sqrt{3}}{4}.\)
+
+\subparagraph{2. Probability:}\label{probability-1}
+
+\(P(-1, -1) = \left|-\frac{\sqrt{3}}{4}\right|^2 = \frac{3}{16}.\)
+
+\paragraph{\texorpdfstring{\textbf{d) Probability of Alice and Bob BOTH
+observing
+\(+1\):}}{d) Probability of Alice and Bob BOTH observing +1:}}\label{d-probability-of-alice-and-bob-both-observing-1}
+
+\subparagraph{\texorpdfstring{1. Amplitude for
+\(|+\rangle|0\rangle\):}{1. Amplitude for \textbar+\textbackslash rangle\textbar0\textbackslash rangle:}}\label{amplitude-for-rangle0rangle}
+
+The coefficient of \(|+\rangle|0\rangle\) is: \(\frac{\sqrt{5}}{4}.\)
+
+\subparagraph{2. Probability:}\label{probability-2}
+
+\(P(+1, +1) = \left|\frac{\sqrt{5}}{4}\right|^2 = \frac{5}{16}.\)
+
+\paragraph{\texorpdfstring{\textbf{e) Post-measurement state when Alice
+observes \(+1\) and Bob observes
+\(-1\):}}{e) Post-measurement state when Alice observes +1 and Bob observes -1:}}\label{e-post-measurement-state-when-alice-observes-1-and-bob-observes--1}
+
+\subparagraph{1. Projection:}\label{projection}
+
+The projection operator for this outcome is:
+\(P_{+1, -1} = (|+\rangle \langle +|) \otimes (|1\rangle \langle 1|).\)
+
+Apply this to \(|\theta\rangle\):
+\(|\theta'\rangle = P_{+1, -1} |\theta\rangle.\)
+
+From the expanded \(|\theta\rangle\), the term contributing to
+\(|+\rangle|1\rangle\) has coefficient: \(\frac{\sqrt{3}}{4}.\)
+
+\subparagraph{2. Normalize:}\label{normalize}
+
+\(|\theta'\rangle = \frac{|+\rangle|1\rangle}{\sqrt{P(+1, -1)}}.\)
+
+Probability \(P(+1, -1)\):
+\(P(+1, -1) = \left|\frac{\sqrt{3}}{4}\right|^2 = \frac{3}{16}.\)
+
+Normalized state:
+\(|\theta'\rangle = \frac{|+\rangle|1\rangle}{\sqrt{\frac{3}{16}}} = \frac{4}{\sqrt{3}} |+\rangle|1\rangle.\)
+
+\paragraph{\texorpdfstring{\textbf{Summary of
+Answers:}}{Summary of Answers:}}\label{summary-of-answers}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\tightlist
+\item
+  The state is \textbf{entangled}.\\
+\item
+  \(P(-1, +1) = \frac{5}{16}\).\\
+\item
+  \(P(-1, -1) = \frac{3}{16}\).\\
+\item
+  \(P(+1, +1) = \frac{5}{16}\).\\
+\item
+  Post-measurement state:
+  \(|\theta'\rangle = \frac{4}{\sqrt{3}} |+\rangle|1\rangle\).
 \end{enumerate}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
