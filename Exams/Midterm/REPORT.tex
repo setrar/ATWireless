@@ -400,6 +400,16 @@
 \text{December 20, 2024 (DUE January 10, 2025)}
 \]
 
+    \begin{itemize}
+\tightlist
+\item
+  Student: Brice Robert
+\item
+  Track: Master's in ICS
+\item
+  Promo: 2025
+\end{itemize}
+
     \[
 \text{Instructions}
 \]
@@ -879,7 +889,7 @@ advanced signal processing techniques can help mitigate the impact on
 individual rates.
 
     \(\color{orange}9\Bigl)\) \textbf{\emph{(4 points)}}. Consider
-communication over the\(2 \times 1\) quasi-static fading MISO channel,
+communication over the \(2 \times 1\) quasi-static fading MISO channel,
 using a diagonal code (see below for details) such that the channel
 model is given by
 
@@ -942,7 +952,6 @@ expected received vector given by the channel matrix \(\underline{h}\)
 and the transmitted symbols. Mathematically, this can be expressed as:
 
 \(\hat{x}_1, \hat{x}_2 = \arg\min_{x_1, x_2} \| \underline{y} - \theta \underline{h} \mathcal{X}_{tr} \|^2\)
-
 where \(\underline{y} = (y_1 \quad y_2)\),
 \(\underline{h} = (h_1 \quad h_2)\),
 \(\mathcal{X}_{tr} = \begin{pmatrix} x_1 & 0 \\ 0 & x_2 \end{pmatrix}\).
@@ -976,64 +985,42 @@ can be calculated as:
 
 For 256-QAM, the average power is approximately:
 
-\(P_{\text{avg}} = \frac{(M-1)}{3} = \frac{255}{3} \approx 85\)
-
-Thus,
-
+\(P_{\text{avg}} = \frac{(M-1)}{3} = \frac{255}{3} \approx 85\) Thus,
 \(\theta = \sqrt{\frac{10}{85}} \approx 0.34\)
 
 \paragraph{Rate of Code and Slope of Probability of Error for
 16-PAM}\label{rate-of-code-and-slope-of-probability-of-error-for-16-pam}
 
 \begin{itemize}
-\tightlist
 \item
   \textbf{Rate}: If \(x_1\) and \(x_2\) are independently chosen from a
   16-PAM constellation, each symbol carries \(\log_2(16) = 4\) bits.
   Since there are 2 symbols, the rate is:
-\end{itemize}
-
-\(R = 2 \times 4 = 8 \text{ bpcu}\)
-
-\begin{itemize}
-\tightlist
+  \(R = 2 \times 4 = 8 \text{ bpcu}\)
 \item
   \textbf{Slope of Probability of Error}: In high SNR regimes, the slope
   of the probability of error (in log scale) for a system with diversity
-  order \(d\) is:
+  order \(d\) is: \(\text{Slope} = -d\)
 \end{itemize}
 
-\(\text{Slope} = -d\)
-
 For a 2x1 MISO system using independent symbols, the diversity order is
-2. Thus, the slope of the probability of error is:
-
-\(\text{Slope} = -2\)
+2. Thus, the slope of the probability of error is: \(\text{Slope} = -2\)
 
 \paragraph{\texorpdfstring{Rate and Slope of Probability of Error for
 Orthogonal Matrix \(\mathbf{Q}\) with
 64-QAM}{Rate and Slope of Probability of Error for Orthogonal Matrix \textbackslash mathbf\{Q\} with 64-QAM}}\label{rate-and-slope-of-probability-of-error-for-orthogonal-matrix-mathbfq-with-64-qam}
 
 \begin{itemize}
-\tightlist
 \item
   \textbf{Rate}: If \(x_1\) and \(x_2\) are chosen from a 64-QAM
   constellation, each symbol carries \(\log_2(64) = 6\) bits. Since
-  there are 2 symbols, the rate is:
-\end{itemize}
-
-\(R = 2 \times 6 = 12 \text{ bpcu}\)
-
-\begin{itemize}
-\tightlist
+  there are 2 symbols, the rate is: \(R = 2 \times 6 = 12 \text{ bpcu}\)
 \item
   \textbf{Slope of Probability of Error}: If
   \((x_1, x_2) = (s_1, s_2) \cdot \mathbf{Q}\) where \(\mathbf{Q}\) is
   an orthogonal matrix, the diversity order remains 2. Therefore, the
-  slope of the probability of error is:
+  slope of the probability of error is: \(\text{Slope} = -2\)
 \end{itemize}
-
-\(\text{Slope} = -2\)
 
     \(\color{orange}10\Bigl)\) \textbf{\emph{(Extra Credit: 5 points)}}.
 Consider communication over a quasi-static \(2 \times 2\) MIMO channel,
@@ -1131,13 +1118,11 @@ dB}\label{approximate-probability-of-error-at-snr-30-db}
 
 In the high SNR regime, the probability of error \(P_e\) for a MIMO
 system with diversity gain \(d\) typically decreases as:
-
 \(P_e \approx \left( \frac{1}{\text{SNR}} \right)^d\)
 
 Given: - SNR = 30 dB = \(10^{30/10} = 10^3\) - Diversity Gain \(d = 2\)
 
 The approximate probability of error is:
-
 \(P_e \approx \left( \frac{1}{10^3} \right)^2 = 10^{-6}\)
 
 \paragraph{Summary}\label{summary}
@@ -1495,7 +1480,6 @@ with \(|1⟩⟨1|\).
 separable?}}{a) Is the joint state entangled or separable?}}\label{a-is-the-joint-state-entangled-or-separable}
 
 The state is:
-
 \(|\theta\rangle = \frac{\sqrt{3}}{2\sqrt{2}} |11\rangle + \frac{\sqrt{5}}{2\sqrt{2}} |00\rangle.\)
 
 \begin{itemize}
