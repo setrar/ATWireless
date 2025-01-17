@@ -77,7 +77,7 @@ Here’s a detailed comparison of **OFDMA**, **CDMA**, **FDMA**, and **TDMA**, t
 
 ---
 
-### **Summary**
+### **Summary of Multiple Access**
 | Access Technology | **Best For**                              | **Key Trade-Off**                |
 |-------------------|------------------------------------------|----------------------------------|
 | **OFDMA**         | High-bandwidth systems like 4G/5G/Wi-Fi  | High complexity and sync needs  |
