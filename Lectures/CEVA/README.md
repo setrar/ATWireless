@@ -280,3 +280,36 @@ This means the channel will remain stable for approximately 2.1 milliseconds.
 
 ### **Summary**
 Coherence time quantifies how long a channel remains stable. Shorter $T_c$ (high motion, high frequency) requires faster channel adaptation, while longer $T_c$ allows for simpler communication strategies.
+
+## **Coherence bandwidth**
+
+**Coherence bandwidth (\(B_c\))** is the frequency range over which the channel's response remains constant. It is inversely related to the **delay spread (\(\tau\))**:
+
+\[
+B_c \approx \frac{1}{\tau}
+\]
+
+---
+
+### **Key Points**:
+- **Flat fading**: Signal bandwidth \(W \leq B_c\) → Channel behaves uniformly across frequencies.
+- **Frequency-selective fading**: Signal bandwidth \(W > B_c\) → Channel varies across frequencies.
+- Used to design systems like **OFDM** by ensuring subcarrier spacing fits within \(B_c\).
+
+---
+
+### **Examples**:
+- Indoor (\(\tau \sim 1 \, \mu s\)): \(B_c \approx 1 \, \text{MHz}\).
+- Urban (\(\tau \sim 10 \, \mu s\)): \(B_c \approx 100 \, \text{kHz}\).
+
+---
+
+### **Comparison with Coherence Time**:
+| **Aspect**           | **Coherence Bandwidth**    | **Coherence Time**         |
+|-----------------------|----------------------------|----------------------------|
+| **Depends on**        | Delay spread (\(\tau\))    | Doppler spread (\(f_D\))   |
+| **Unit**             | Hertz (Hz)                | Seconds (s)               |
+| **Applications**     | Frequency stability       | Time stability            |
+
+### **Purpose**:
+Helps design systems for stable signal transmission in multipath environments.
