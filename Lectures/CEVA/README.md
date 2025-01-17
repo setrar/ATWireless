@@ -285,9 +285,9 @@ Coherence time quantifies how long a channel remains stable. Shorter $T_c$ (high
 
 **Coherence bandwidth (\(B_c\))** is the frequency range over which the channel's response remains constant. It is inversely related to the **delay spread (\(\tau\))**:
 
-\[
+$
 B_c \approx \frac{1}{\tau}
-\]
+$
 
 ---
 
