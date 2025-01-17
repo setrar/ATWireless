@@ -216,9 +216,9 @@ Wi-Fi 6 dynamically adapts the coding rate based on channel quality for optimal 
 ### **Definition**
 Coherence time (\(T_c\)) is inversely related to the **Doppler spread** (\(f_D\)), which is caused by relative motion between the transmitter and receiver or changes in the environment:
 
-\[
+$
 T_c \approx \frac{1}{f_D}
-\]
+$
 
 Where:
 - \(T_c\): Coherence time (seconds).
@@ -248,9 +248,9 @@ Where:
 ### **Rule of Thumb**
 - Coherence time is typically approximated as:
 
-\[
+$
 T_c \approx \frac{0.423}{f_D}
-\]
+$
 
 Where \(f_D = v \cdot \frac{f_c}{c}\):
 - \(v\): Relative speed (m/s).
