@@ -103,3 +103,91 @@ Yes, in addition to **OFDMA**, **CDMA**, **FDMA**, and **TDMA**, several other m
 | **Hybrid** | 5G and beyond        | Combined benefits              | Complexity |
 
 These emerging and hybrid multiple access techniques address the challenges of increasing connectivity and data demands in modern networks, especially in **5G**, **IoT**, and **beyond-5G** applications.
+
+## **OFDM (Orthogonal Frequency Division Multiplexing)** and **OFDMA (Orthogonal Frequency Division Multiple Access)**
+
+The primary difference between **OFDM (Orthogonal Frequency Division Multiplexing)** and **OFDMA (Orthogonal Frequency Division Multiple Access)** lies in how the available resources (subcarriers) are allocated and used:
+
+---
+
+### **1. Definition**
+- **OFDM**:
+  - A modulation scheme where the entire bandwidth is divided into multiple orthogonal subcarriers.
+  - All subcarriers are used by a **single user** at a time.
+- **OFDMA**:
+  - A multiple access technique that extends OFDM by allowing multiple users to share the subcarriers.
+  - Subcarriers are dynamically divided among multiple users simultaneously.
+
+---
+
+### **2. User Access**
+- **OFDM**:
+  - Designed for **single-user** communication.
+  - All subcarriers are utilized for one user at a time.
+- **OFDMA**:
+  - Designed for **multi-user** communication.
+  - Subcarriers are allocated to different users, enabling simultaneous access.
+
+---
+
+### **3. Resource Allocation**
+- **OFDM**:
+  - No dynamic resource allocation; the entire frequency band is used by one user.
+- **OFDMA**:
+  - Supports dynamic allocation of subcarriers, time slots, and power to different users based on their requirements.
+
+---
+
+### **4. Applications**
+- **OFDM**:
+  - Primarily used in point-to-point communication systems such as:
+    - Wi-Fi (802.11a/g/n/ac).
+    - Digital Video Broadcasting (DVB-T, DVB-C).
+- **OFDMA**:
+  - Primarily used in point-to-multipoint systems such as:
+    - 4G LTE.
+    - 5G NR.
+    - Wi-Fi 6 (802.11ax).
+
+---
+
+### **5. Latency**
+- **OFDM**:
+  - Higher latency for multi-user scenarios as each user must take turns using the entire bandwidth.
+- **OFDMA**:
+  - Lower latency since multiple users can transmit simultaneously on separate subcarriers.
+
+---
+
+### **6. Complexity**
+- **OFDM**:
+  - Less complex, as it deals with one user and all subcarriers.
+- **OFDMA**:
+  - More complex due to the need for dynamic resource allocation, synchronization, and interference management among multiple users.
+
+---
+
+### **7. Efficiency**
+- **OFDM**:
+  - Less efficient in multi-user environments because only one user can use the resources at a time.
+- **OFDMA**:
+  - More efficient in multi-user environments because it enables simultaneous access for multiple users.
+
+---
+
+### **Comparison Table**
+
+| Feature                | **OFDM**                     | **OFDMA**                     |
+|------------------------|------------------------------|-------------------------------|
+| **Primary Use**         | Single-user communication    | Multi-user communication      |
+| **Resource Allocation** | Entire bandwidth for one user| Subcarriers shared by users   |
+| **Latency**             | Higher (multi-user)          | Lower (multi-user)            |
+| **Applications**        | Wi-Fi (legacy), DVB          | 4G LTE, 5G NR, Wi-Fi 6        |
+| **Efficiency**          | Low for multi-user scenarios | High for multi-user scenarios |
+| **Complexity**          | Lower                       | Higher                        |
+
+---
+
+### **Summary**
+- **OFDM** is a **modulation technique** designed for single-user systems, where all subcarriers are dedicated to one user.
+- **OFDMA** is a **multiple access technique** that builds on OFDM, enabling efficient resource sharing among multiple users in modern communication systems like **4G LTE**, **5G**, and **Wi-Fi 6**.
