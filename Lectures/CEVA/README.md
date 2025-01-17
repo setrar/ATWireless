@@ -206,3 +206,77 @@ The **coding rate** is the ratio of useful data to total transmitted data, expre
 - **Lower Coding Rate (e.g., $\frac{1}{2}$)**: Slower data, better error correction, suitable for poor conditions.
 
 Wi-Fi 6 dynamically adapts the coding rate based on channel quality for optimal performance.
+
+## **Coherence time** (used for BeamForming)
+
+**Coherence time** is the time duration over which a wireless communication channel can be considered time-invariant or stable, meaning the channel's characteristics (such as amplitude and phase) remain relatively constant. It is a key parameter in wireless communication systems for assessing channel variability due to motion or changing environments.
+
+---
+
+### **Definition**
+Coherence time (\(T_c\)) is inversely related to the **Doppler spread** (\(f_D\)), which is caused by relative motion between the transmitter and receiver or changes in the environment:
+
+\[
+T_c \approx \frac{1}{f_D}
+\]
+
+Where:
+- \(T_c\): Coherence time (seconds).
+- \(f_D\): Doppler spread (Hz), the range of frequency shifts caused by motion.
+
+---
+
+### **Key Factors Affecting Coherence Time**
+1. **Relative Speed**:
+   - Higher relative speed between transmitter and receiver → Higher Doppler spread → Shorter coherence time.
+2. **Carrier Frequency**:
+   - Higher frequencies are more affected by Doppler shift → Shorter coherence time.
+3. **Environment**:
+   - Urban environments with multipath propagation typically result in shorter coherence times due to rapid signal fluctuations.
+
+---
+
+### **Implications**
+- **Fast Fading**:
+   - Occurs when \(T_c\) is very short, and the channel changes rapidly compared to the signal's symbol duration.
+   - Communication systems need to adapt dynamically, e.g., using equalization or error correction.
+- **Slow Fading**:
+   - Occurs when \(T_c\) is long, and the channel remains relatively stable over many symbols.
+
+---
+
+### **Rule of Thumb**
+- Coherence time is typically approximated as:
+
+\[
+T_c \approx \frac{0.423}{f_D}
+\]
+
+Where \(f_D = v \cdot \frac{f_c}{c}\):
+- \(v\): Relative speed (m/s).
+- \(f_c\): Carrier frequency (Hz).
+- \(c\): Speed of light (\(3 \times 10^8 \, \text{m/s}\)).
+
+---
+
+### **Applications**
+- **Design of Communication Systems**:
+   - Adaptive modulation and coding.
+   - Channel estimation and tracking.
+   - Time diversity techniques.
+- **5G and Beyond**:
+   - Essential for systems operating at higher frequencies (e.g., mmWave) where \(T_c\) is shorter.
+
+---
+
+### **Example**
+- At \(f_c = 2 \, \text{GHz}\) with \(v = 30 \, \text{m/s}\) (108 km/h):
+  - \(f_D = v \cdot \frac{f_c}{c} = 30 \cdot \frac{2 \times 10^9}{3 \times 10^8} = 200 \, \text{Hz}\)
+  - \(T_c \approx \frac{0.423}{200} \approx 2.1 \, \text{ms}\)
+
+This means the channel will remain stable for approximately 2.1 milliseconds.
+
+---
+
+### **Summary**
+Coherence time quantifies how long a channel remains stable. Shorter \(T_c\) (high motion, high frequency) requires faster channel adaptation, while longer \(T_c\) allows for simpler communication strategies.
