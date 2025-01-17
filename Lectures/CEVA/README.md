@@ -214,15 +214,15 @@ Wi-Fi 6 dynamically adapts the coding rate based on channel quality for optimal 
 ---
 
 ### **Definition**
-Coherence time (\(T_c\)) is inversely related to the **Doppler spread** (\(f_D\)), which is caused by relative motion between the transmitter and receiver or changes in the environment:
+Coherence time ($T_c$) is inversely related to the **Doppler spread** ($f_D$), which is caused by relative motion between the transmitter and receiver or changes in the environment:
 
 $
 T_c \approx \frac{1}{f_D}
 $
 
 Where:
-- \(T_c\): Coherence time (seconds).
-- \(f_D\): Doppler spread (Hz), the range of frequency shifts caused by motion.
+- $T_c$: Coherence time (seconds).
+- $f_D$: Doppler spread (Hz), the range of frequency shifts caused by motion.
 
 ---
 
@@ -238,10 +238,10 @@ Where:
 
 ### **Implications**
 - **Fast Fading**:
-   - Occurs when \(T_c\) is very short, and the channel changes rapidly compared to the signal's symbol duration.
+   - Occurs when $T_c$ is very short, and the channel changes rapidly compared to the signal's symbol duration.
    - Communication systems need to adapt dynamically, e.g., using equalization or error correction.
 - **Slow Fading**:
-   - Occurs when \(T_c\) is long, and the channel remains relatively stable over many symbols.
+   - Occurs when $T_c$ is long, and the channel remains relatively stable over many symbols.
 
 ---
 
@@ -252,10 +252,10 @@ $
 T_c \approx \frac{0.423}{f_D}
 $
 
-Where \(f_D = v \cdot \frac{f_c}{c}\):
-- \(v\): Relative speed (m/s).
-- \(f_c\): Carrier frequency (Hz).
-- \(c\): Speed of light (\(3 \times 10^8 \, \text{m/s}\)).
+Where $f_D = v \cdot \frac{f_c}{c}$:
+- $v$: Relative speed (m/s).
+- $f_c$: Carrier frequency (Hz).
+- $c$: Speed of light ($3 \times 10^8 \, \text{m/s}$).
 
 ---
 
@@ -265,18 +265,18 @@ Where \(f_D = v \cdot \frac{f_c}{c}\):
    - Channel estimation and tracking.
    - Time diversity techniques.
 - **5G and Beyond**:
-   - Essential for systems operating at higher frequencies (e.g., mmWave) where \(T_c\) is shorter.
+   - Essential for systems operating at higher frequencies (e.g., mmWave) where $T_c$ is shorter.
 
 ---
 
 ### **Example**
-- At \(f_c = 2 \, \text{GHz}\) with \(v = 30 \, \text{m/s}\) (108 km/h):
-  - \(f_D = v \cdot \frac{f_c}{c} = 30 \cdot \frac{2 \times 10^9}{3 \times 10^8} = 200 \, \text{Hz}\)
-  - \(T_c \approx \frac{0.423}{200} \approx 2.1 \, \text{ms}\)
+- At $f_c = 2 \, \text{GHz}$ with $v = 30 \, \text{m/s}$ (108 km/h):
+  - $f_D = v \cdot \frac{f_c}{c} = 30 \cdot \frac{2 \times 10^9}{3 \times 10^8} = 200 \, \text{Hz}$
+  - $T_c \approx \frac{0.423}{200} \approx 2.1 \, \text{ms}$
 
 This means the channel will remain stable for approximately 2.1 milliseconds.
 
 ---
 
 ### **Summary**
-Coherence time quantifies how long a channel remains stable. Shorter \(T_c\) (high motion, high frequency) requires faster channel adaptation, while longer \(T_c\) allows for simpler communication strategies.
+Coherence time quantifies how long a channel remains stable. Shorter $T_c$ (high motion, high frequency) requires faster channel adaptation, while longer $T_c$ allows for simpler communication strategies.
