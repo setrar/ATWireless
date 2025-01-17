@@ -86,3 +86,20 @@ Here’s a detailed comparison of **OFDMA**, **CDMA**, **FDMA**, and **TDMA**, t
 | **TDMA**          | Low-data-rate systems (e.g., GSM)        | Time slot inefficiency for high data |
 
 In modern systems, **OFDMA** dominates due to its flexibility, efficiency, and support for high-capacity networks.
+
+Yes, in addition to **OFDMA**, **CDMA**, **FDMA**, and **TDMA**, several other multiple access technologies are used in modern and emerging wireless communication systems. Here's a look at some notable ones:
+
+---
+
+### Summary of Additional Techniques
+| Technique | **Primary Use Case** | **Advantages** | **Challenges** |
+|-----------|-----------------------|----------------|----------------|
+| **SDMA**  | Massive MIMO, 5G      | High capacity via spatial reuse | Advanced antennas needed |
+| **NOMA**  | IoT, 5G               | Higher spectral efficiency     | Complex receiver design |
+| **SCMA**  | Future 5G systems     | Overload capability            | Codebook design |
+| **PDMA**  | Dense IoT networks    | Flexibility, robustness        | Pattern complexity |
+| **Cognitive Radio** | Dynamic spectrum access | Spectrum efficiency | Spectrum sensing |
+| **ALOHA/CSMA** | Low-traffic IoT   | Simple, scalable               | Collision inefficiency |
+| **Hybrid** | 5G and beyond        | Combined benefits              | Complexity |
+
+These emerging and hybrid multiple access techniques address the challenges of increasing connectivity and data demands in modern networks, especially in **5G**, **IoT**, and **beyond-5G** applications.
