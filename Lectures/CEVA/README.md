@@ -191,3 +191,18 @@ The primary difference between **OFDM (Orthogonal Frequency Division Multiplexin
 ### **Summary**
 - **OFDM** is a **modulation technique** designed for single-user systems, where all subcarriers are dedicated to one user.
 - **OFDMA** is a **multiple access technique** that builds on OFDM, enabling efficient resource sharing among multiple users in modern communication systems like **4G LTE**, **5G**, and **Wi-Fi 6**.
+
+## **coding rate**
+
+The **coding rate** is the ratio of useful data to total transmitted data, expressed as \( R = \frac{k}{n} \), where \( k \) is the number of information bits and \( n \) is the total bits (information + redundancy). 
+
+### **Wi-Fi 6 Coding Rates**:
+- Coding rates vary based on the Modulation and Coding Scheme (MCS):
+  - \( \frac{1}{2} \): High redundancy, robust (e.g., BPSK, QPSK).
+  - \( \frac{3}{4}, \frac{5}{6} \): Less redundancy, high throughput (e.g., 64-QAM, 1024-QAM).
+
+### **Trade-offs**:
+- **Higher Coding Rate (e.g., \( \frac{5}{6} \))**: Faster data, less error protection, needs good channel conditions.
+- **Lower Coding Rate (e.g., \( \frac{1}{2} \))**: Slower data, better error correction, suitable for poor conditions.
+
+Wi-Fi 6 dynamically adapts the coding rate based on channel quality for optimal performance.
