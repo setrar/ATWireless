@@ -104,7 +104,7 @@ Yes, in addition to **OFDMA**, **CDMA**, **FDMA**, and **TDMA**, several other m
 
 These emerging and hybrid multiple access techniques address the challenges of increasing connectivity and data demands in modern networks, especially in **5G**, **IoT**, and **beyond-5G** applications.
 
-## **OFDM (Orthogonal Frequency Division Multiplexing)** and **OFDMA (Orthogonal Frequency Division Multiple Access)**
+## **OFDM** and **OFDMA**
 
 The primary difference between **OFDM (Orthogonal Frequency Division Multiplexing)** and **OFDMA (Orthogonal Frequency Division Multiple Access)** lies in how the available resources (subcarriers) are allocated and used:
 
