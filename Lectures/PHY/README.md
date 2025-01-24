@@ -17,12 +17,8 @@ To calculate the **total yearly cost per subscriber** for 5G spectrum in France,
 
 ### Steps to Calculate Yearly Cost per Subscriber:
 1. **Yearly Cost of Spectrum**:
-   $
-   \text{Yearly Cost of Spectrum} = \frac{\text{Total License Fees}}{\text{License Duration}}
-   $
-   $
-   = \frac{2.786 \, \text{billion}}{15} = \text{€185.73 million per year}
-   $
+   $\text{Yearly Cost of Spectrum} = \frac{\text{Total License Fees}}{\text{License Duration}}$
+   $= \frac{2.786 \, \text{billion}}{15} = \text{€185.73 million per year}$
 
 2. **Cost per Subscriber per Year**:
    $
