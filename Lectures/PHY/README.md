@@ -55,23 +55,15 @@ As of the second quarter of 2024, Canada had approximately **36.7 million mobile
 
 1. **Annual Spectrum Cost:**
 
-   $
-   \text{Annual Spectrum Cost} = \frac{\text{Total License Fees}}{\text{License Duration}}
-   $
+   $\text{Annual Spectrum Cost} = \frac{\text{Total License Fees}}{\text{License Duration}}$
 
-   $
-   = \frac{11{,}010{,}000{,}000 \, \text{CAD}}{20 \, \text{years}} = 550{,}500{,}000 \, \text{CAD/year}
-   $
+   $= \frac{11{,}010{,}000{,}000 \, \text{CAD}}{20 \, \text{years}} = 550{,}500{,}000 \, \text{CAD/year}$
 
 2. **Annual Cost per Subscriber:**
 
-   $
-   \text{Annual Cost per Subscriber} = \frac{\text{Annual Spectrum Cost}}{\text{Total Subscribers}}
-   $
+   $\text{Annual Cost per Subscriber} = \frac{\text{Annual Spectrum Cost}}{\text{Total Subscribers}}$
 
-   $
-   = \frac{550{,}500{,}000 \, \text{CAD/year}}{36{,}700{,}000 \, \text{subscribers}} \approx 15 \, \text{CAD/subscriber/year}
-   $
+   $= \frac{550{,}500{,}000 \, \text{CAD/year}}{36{,}700{,}000 \, \text{subscribers}} \approx 15 \, \text{CAD/subscriber/year}$
 
 ### Conclusion:
 
