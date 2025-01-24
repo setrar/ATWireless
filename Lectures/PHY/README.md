@@ -70,3 +70,15 @@ As of the second quarter of 2024, Canada had approximately **36.7 million mobile
 The estimated **annual spectrum license cost per mobile subscriber** in Canada is approximately **15 CAD**.
 
 **Note:** This calculation focuses solely on the spectrum license fees and does not account for other operational expenses, infrastructure investments, or additional costs incurred by mobile operators, which also influence the pricing of services to consumers. 
+
+---
+
+The higher cost of 5G spectrum in Canada compared to France is due to:
+
+1. **Aggressive Spectrum Auctions**: Canada uses revenue-maximizing auctions, driving up prices, while France's ARCEP focuses on affordability.
+2. **Market Concentration**: Canada has 3 dominant players (Bell, Rogers, Telus), leading to less competition. France has 4 major operators, increasing competition and lowering costs.
+3. **Population Density**: Canada’s sparse population (4/km²) raises deployment costs, while France’s higher density (123/km²) spreads costs across more users.
+4. **Geographic Challenges**: Canada’s vast size and rural areas require costly infrastructure. France’s smaller, more uniform geography is cheaper to serve.
+5. **Regulatory Priorities**: Canada prioritizes government revenue and rural coverage, while France emphasizes affordability and competition.
+
+In short, Canada's unique geography, market structure, and auction policies make spectrum and deployment costs significantly higher.
